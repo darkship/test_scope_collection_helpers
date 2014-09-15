@@ -1,0 +1,16 @@
+<head>
+  <title>test_scope_collection_helpers</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#with mytodo}}
+  url of todo : {{this.url}}<br>
+  url of todolist : {{this.todolist.url}}
+  {{/with}}
+</template>
